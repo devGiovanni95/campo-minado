@@ -8,9 +8,9 @@ public class Campo {
     private final int linha;
     private final int coluna;
 
-    private boolean aberto = false;
-    private  boolean minado = false;
-    private  boolean marcado = false;
+    private boolean aberto ;
+    private  boolean minado ;
+    private  boolean marcado ;
 
     private List<Campo> vizinhos = new ArrayList<>();
 
@@ -18,6 +18,7 @@ public class Campo {
         this.linha = linha;
         this.coluna = coluna;
     }
+
 
     boolean adicionarVizinho(Campo vizinho){
         boolean linhaDiferente = linha!= vizinho.linha;
