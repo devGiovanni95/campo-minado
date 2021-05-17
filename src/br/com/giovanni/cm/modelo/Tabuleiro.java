@@ -84,10 +84,20 @@ public class Tabuleiro {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        
+
+        sb.append("  ");
+        for (int c = 0; c < colunas; c++){
+            sb.append(" ");
+            sb.append(c);
+            sb.append(" ");
+        }
+        sb.append("\n");
 
         int i = 0;
         for (int line = 0; line < linhas; line++){
+
+            sb.append(line);
+            sb.append(" ");
             for (int colun = 0; colun < colunas; colun++){
                 sb.append(" ");
                 sb.append(campos.get(i));
